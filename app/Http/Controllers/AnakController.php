@@ -44,13 +44,12 @@ class AnakController extends Controller
             'jenis_kelamin' => 'required',
             'usia' => 'required',
         ]);
-        $data_anak = new Anak();
-        $data_anak->nama = $request->nama;
-        $data_anak->jenis_kelamin = $request->jenis_kelamin;
-        $data_anak-> = $request->nomor;
-        $donatur->email = $request->email;
-        $donatur->save();
-        return redirect()->route('donatur.index');
+        $anak = new Anak();
+        $anak->nama = $request->nama;
+        $anak->jenis_kelamin = $request->jenis_kelamin;
+        $anak->usia = $request->usia;
+        $anak->save();
+        return redirect()->route('anak.index');
     }
 
     /**
@@ -61,7 +60,8 @@ class AnakController extends Controller
      */
     public function show($id)
     {
-        //
+        $anak = Anak::findOrFail($id);
+        return view('anak-asuh.show', compact('anak'));
     }
 
     /**
@@ -79,10 +79,10 @@ class AnakController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Data_anak  $data_anak
+     * @param  \App\Models\Anak  $anak
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Data_anak $data_anak)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -95,6 +95,7 @@ class AnakController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $anak = Anak::findOrFail($id)->delete();
+        return redirect->route('anak.index');
     }
 }

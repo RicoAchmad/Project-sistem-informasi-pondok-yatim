@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DonaturController;
 use App\Http\Controllers\PemasukanController;
 use App\Http\Controllers\PengeluaranController;
-use App\Http\Controllers\DataAnakAsuhController;
+use App\Http\Controllers\AnakController;
 
 
 /*
@@ -34,5 +34,5 @@ route::group(['prefix' => 'admin' , 'middleware' => ['auth']], function() {
     Route::resource('donatur', DonaturController::class);
     Route::resource('pemasukan', PemasukanController::class);
     Route::resource('pengeluaran', PengeluaranController::class);
-    Route::resource('anak-asuh', DataAnakAsuhController::class);
+    Route::resource('anak-asuh', AnakController::class);
 });
