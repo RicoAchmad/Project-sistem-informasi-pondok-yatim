@@ -10,7 +10,7 @@
                         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('assets/images/logo-mini.png')}}"
                                 alt="logo" /></a>
                     </div>
-                    <ul class="navbar-nav navbar-nav-right">
+                        <ul class="navbar-nav navbar-nav-right">
                        
                         <li class="nav-item dropdown mr-1">
                             <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
@@ -119,7 +119,7 @@
                     <ul class="navbar-nav mr-lg-2">
                         <li class="nav-item nav-search d-none d-lg-block">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Here..." aria-label="search"
+                                <input type="text" class="form-control" placeholder="Pondok Anak Yatim" aria-label="search"
                                     aria-describedby="search">
                             </div>
                         </li>

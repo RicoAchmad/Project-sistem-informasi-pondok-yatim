@@ -1,4 +1,4 @@
-@extends('layouts.admin');
+@extends('layouts.admin')
 
 @section('title')
 Data Pemasukan
@@ -8,6 +8,7 @@ Data Pemasukan
 <div class="container">
     <div class="'row">
         <div class="col">
+        <h3><b>Terimakasih atas donasi yang telah Anda berikan, Insya Allah donasi akan kami gunakan kepada keperluan dan kebutuhan Anak Asuh dengan baik dan Amanah</b></h3>
             <div class="card">
                 <div class="card-header">Data Pemasukan</div>
                     <a href="{{ route('pemasukan.create') }}" class="btn btn-outline-primary">Tambah Data</a>
@@ -26,6 +27,7 @@ Data Pemasukan
                             @foreach ($pemasukan as $item)
                                 <tr>
                                     <td>{{ $no++ }}</td>
+                                        
                                     <td>{{ $item->donatur->nama }}</td>
                                     <td>{{ $item->jumlah_donasi }}</td>
                                    

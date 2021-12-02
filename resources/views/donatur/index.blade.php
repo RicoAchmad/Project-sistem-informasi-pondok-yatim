@@ -1,4 +1,4 @@
-@extends('layouts.admin');
+@extends('layouts.admin')
 
 @section('title')
 Data Diri Donatur
@@ -8,9 +8,11 @@ Data Diri Donatur
 <div class="container">
     <div class="'row">
         <div class="col">
+            <h3><b>Silahkan Daftarkan Diri Anda Terlebih Dahulu Sebagai Donatur</b></h3>
+            <br>
             <div class="card">
                 <div class="card-header">Data Donatur</div>
-                    <a href="{{ route('donatur.create') }}" class="btn btn-outline-primary">Tambah Data</a>
+                    <a href="{{ route('donatur.create') }}" class="btn btn-outline-primary">Klik Untuk Daftar</a>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
@@ -49,6 +51,8 @@ Data Diri Donatur
                     </div>
                 </div>
             </div>
+            <br>
+            <h4><b>Lalu  </b><a href="{{ url('admin/pemasukan')}}" class="btn btn-outline-primary">Klik Disini..</a> <b>Untuk Berdonasi </b></h4> 
         </div>
     </div>
 </div>

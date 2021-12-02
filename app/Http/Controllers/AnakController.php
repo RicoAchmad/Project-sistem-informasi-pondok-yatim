@@ -110,6 +110,6 @@ class AnakController extends Controller
     public function destroy($id)
     {
         $anak = Anak::findOrFail($id)->delete();
-        return redirect()->route('anak.index');
+        return redirect()->route('anak-asuh.index');
     }
 }
