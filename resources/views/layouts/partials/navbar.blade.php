@@ -10,7 +10,6 @@
                         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('assets/images/logo-mini.png')}}"
                                 alt="logo" /></a>
                     </div>
-                    <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Selamat Datang Di Website Sistem Informasi Pondok Anak Yatim</h4>
                     <ul class="navbar-nav navbar-nav-right">
                        
                         <li class="nav-item dropdown mr-1">

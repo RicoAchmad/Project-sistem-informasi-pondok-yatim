@@ -1,7 +1,7 @@
 @extends('layouts.admin');
 
 @section('title')
-Data Diri Donatur
+Data Diri Anak
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@ Data Diri Donatur
         <div class="col">
             <div class="card">
                 <div class="card-header">Data Diri Anak</div>
-                    <a href="{{ route('anak.create') }}" class="btn btn-outline-primary">Tambah Data</a>
+                    <a href="{{ route('anak-asuh.create') }}" class="btn btn-outline-primary">Tambah Data</a>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
@@ -24,7 +24,7 @@ Data Diri Donatur
                             @php
                                 $no = 1;
                             @endphp
-                            @foreach ($data as $item)
+                            @foreach ($anak as $item)
                                 <tr>
                                     <td>{{ $no++ }}</td>
                                     <td>{{ $item->nama }}</td>
@@ -32,11 +32,11 @@ Data Diri Donatur
                                     <td>{{ $item->usia }}</td>
                                    
                                     <td>
-                                        <form action="{{ route('anak.destroy', $item->id)}}" method="post">
+                                        <form action="{{ route('anak-asuh.destroy', $item->id)}}" method="post">
                                         @csrf
                                         @method('DELETE')
-                                        <a href="{{ route('anak.edit', $item->id) }}" class="btn btn-outline-success">Edit</a>
-                                        <a href="{{ route('anak.show', $item->id) }}" class="btn btn-outline-warning">Show</a>
+                                        <a href="{{ route('anak-asuh.edit', $item->id) }}" class="btn btn-outline-success">Edit</a>
+                                        <a href="{{ route('anak-asuh.show', $item->id) }}" class="btn btn-outline-warning">Show</a>
                                         <button type="submit" onclick="return confirm('Apakah anda yakin?')" class="btn btn-outline-danger">
                                             Delete
                                         </button>

@@ -9,7 +9,7 @@ Data Diri Donatur
     <div class="'row">
         <div class="col">
             <div class="card">
-                <div class="card-header">Data Penulis</div>
+                <div class="card-header">Data Donatur</div>
                     <a href="{{ route('donatur.create') }}" class="btn btn-outline-primary">Tambah Data</a>
                 <div class="card-body">
                     <div class="table-responsive">

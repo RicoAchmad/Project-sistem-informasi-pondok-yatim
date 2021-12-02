@@ -67,7 +67,7 @@ class PemasukanController extends Controller
      * @param  \App\Models\Pemasukan  $pemasukan
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pemasukan $pemasukan)
+    public function edit($id)
     {
         $pemasukan = Pemasukan::findOrFail($id);
         $donatur = Donatur::all();
@@ -88,9 +88,9 @@ class PemasukanController extends Controller
             'donasi' => 'required',
         ]);
         $pemasukan = Pemasukan::findOrFail($id);
-        $pemasukan->nama = $request->nama;
-        $pemasukan->author_id = $request->author_id;
-        $donatur->save();
+        $pemasukan->donatur_id = $request->donatur_id;
+        $pemasukan->jumlah_donasi = $request->donasi;
+        $pemasukan->save();
         return redirect()->route('pemasukan.index');
     }
 

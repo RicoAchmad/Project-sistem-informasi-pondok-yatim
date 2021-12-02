@@ -9,7 +9,7 @@ Data Pemasukan
     <div class="'row">
         <div class="col">
             <div class="card">
-                <div class="card-header">Data Penulis</div>
+                <div class="card-header">Data Pemasukan</div>
                     <a href="{{ route('pemasukan.create') }}" class="btn btn-outline-primary">Tambah Data</a>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -28,7 +28,6 @@ Data Pemasukan
                                     <td>{{ $no++ }}</td>
                                     <td>{{ $item->donatur->nama }}</td>
                                     <td>{{ $item->jumlah_donasi }}</td>
-                                    <td>{{ $item->usia }}</td>
                                    
                                     <td>
                                         <form action="{{ route('pemasukan.destroy', $item->id)}}" method="post">

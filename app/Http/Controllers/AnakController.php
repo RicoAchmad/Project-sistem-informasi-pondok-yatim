@@ -15,8 +15,8 @@ class AnakController extends Controller
     public function index()
     {
         //
-        $data = Anak::all();
-        return view('anak-asuh.index', compact('data'));
+        $anak = Anak::all();
+        return view('anak-asuh.index', compact('anak'));
     }
 
     /**
@@ -26,7 +26,7 @@ class AnakController extends Controller
      */
     public function create()
     {
-        //
+        
         return view('anak-asuh.create');
     }
 
@@ -41,15 +41,15 @@ class AnakController extends Controller
         //
         $request->validate([
             'nama' => 'required',
-            'jenis_kelamin' => 'required',
+            'jk' => 'required',
             'usia' => 'required',
         ]);
         $anak = new Anak();
         $anak->nama = $request->nama;
-        $anak->jenis_kelamin = $request->jenis_kelamin;
+        $anak->jenis_kelamin = $request->jk;
         $anak->usia = $request->usia;
         $anak->save();
-        return redirect()->route('anak.index');
+        return redirect()->route('anak-asuh.index');
     }
 
     /**
@@ -73,6 +73,8 @@ class AnakController extends Controller
     public function edit($id)
     {
         //
+        $anak = Anak::findOrFail($id);
+        return view('anak-asuh.edit', compact('anak'));
     }
 
     /**
@@ -85,6 +87,18 @@ class AnakController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $request->validate([
+            'nama' => 'required',
+            'jk' => 'required',
+            'usia' => 'required',
+        
+        ]);
+        $anak = Anak::findOrFail($id);
+        $anak->nama = $request->nama;
+        $anak->jenis_kelamin = $request->jk;
+        $anak->usia = $request->usia;
+        $anak->save();
+        return redirect()->route('anak-asuh.index');
     }
 
     /**
@@ -96,6 +110,6 @@ class AnakController extends Controller
     public function destroy($id)
     {
         $anak = Anak::findOrFail($id)->delete();
-        return redirect->route('anak.index');
+        return redirect()->route('anak.index');
     }
 }

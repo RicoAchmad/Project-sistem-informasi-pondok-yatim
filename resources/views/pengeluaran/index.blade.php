@@ -1,7 +1,7 @@
 @extends('layouts.admin');
 
 @section('title')
-Data Pemasukan
+Data Pengeluaran
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@ Data Pemasukan
     <div class="'row">
         <div class="col">
             <div class="card">
-                <div class="card-header">Data Penulis</div>
+                <div class="card-header">Data Pengeluaran</div>
                     <a href="{{ route('pengeluaran.create') }}" class="btn btn-outline-primary">Tambah Data</a>
                 <div class="card-body">
                     <div class="table-responsive">

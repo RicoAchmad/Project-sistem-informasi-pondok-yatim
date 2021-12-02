@@ -17,7 +17,7 @@ class CreatePemasukansTable extends Migration
             $table->id();
             $table->bigInteger('donatur_id')->unsigned();
             $table->foreign('donatur_id')->references('id')->on('donaturs');
-            $table->bigInteger('jumlah_donasi');
+            $table->integer('jumlah_donasi');
             $table->timestamps();
         });
     }

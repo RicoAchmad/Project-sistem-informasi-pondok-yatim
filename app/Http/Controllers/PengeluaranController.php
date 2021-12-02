@@ -65,7 +65,7 @@ class PengeluaranController extends Controller
      * @param  \App\Models\Pengeluaran  $pengeluaran
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pengeluaran $pengeluaran)
+    public function edit($id)
     {
         $pengeluaran = Pengeluaran::findOrFail($id);
         return view('pengeluaran.edit', compact('pengeluaran'));
@@ -97,7 +97,7 @@ class PengeluaranController extends Controller
      * @param  \App\Models\Pengeluaran  $pengeluaran
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pengeluaran $pengeluaran)
+    public function destroy($id)
     {
         $pengeluaran = Pengeluaran::findOrFail($id)->delete();
         return redirect()->route('pengeluaran.index');

@@ -11,7 +11,7 @@
                     <form action="{{route('donatur.store')}}" method="post">
                     @csrf
                     <div class="form-group">
-                        <label for="">Nama Anak</label>
+                        <label for="">Nama Donatur</label>
                         <input type="text" name="nama" class="form-control @error('nama')
                             is-invalid
                         @enderror">

@@ -15,8 +15,8 @@ class CreatePengeluaransTable extends Migration
     {
         Schema::create('pengeluarans', function (Blueprint $table) {
             $table->id();
-            $table->string('catatan');
-            $table->bigInteger('biaya_pengeluaran');
+            $table->text('catatan');
+            $table->integer('biaya_pengeluaran');
             $table->timestamps();
         });
     }

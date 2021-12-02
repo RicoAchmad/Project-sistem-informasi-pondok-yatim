@@ -28,10 +28,10 @@
                     </div>
                     <div class="form-group">
                         <label for="">Alamat</label>
-                        <input type="text" name="alamat" value="{{ $donatur->alamat }}" class="form-control"
+                        <input type="text" name="alamat" value="{{ $donatur->alamat }}" class="form-control
                         @error('alamat')
                             is-invalid
-                        @enderror>
+                        @enderror">
                         @error('alamat')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -40,10 +40,10 @@
                     </div>
                     <div class="form-group">
                         <label for="">Nomor</label>
-                        <input type="text" name="alamat" value="{{ $donatur->no_whatsapp }}" class="form-control"
+                        <input type="text" name="nomor" value="{{ $donatur->no_whatsapp }}" class="form-control
                         @error('no_whatsapp')
                             is-invalid
-                        @enderror>
+                        @enderror">
                         @error('no_whatsapp')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -52,10 +52,10 @@
                     </div>
                     <div class="form-group">
                         <label for="">email</label>
-                        <input type="text" name="email" value="{{ $donatur->email }}" class="form-control"
+                        <input type="text" name="email" value="{{ $donatur->email }}" class="form-control
                         @error('email')
                             is-invalid
-                        @enderror>
+                        @enderror">
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
