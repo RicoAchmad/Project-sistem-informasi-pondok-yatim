@@ -52,7 +52,7 @@ Data Diri Donatur
                 </div>
             </div>
             <br>
-            <h4><b>Lalu  </b><a href="{{ url('admin/pemasukan')}}" class="btn btn-outline-primary">Klik Disini..</a> <b>Untuk Berdonasi </b></h4> 
+            <h4><b>Lalu  </b><a href="{{ url('admin/pemasukan')}}" class="btn btn-primary">Klik Disini..</a> <b>Untuk Bersedekah </b></h4> 
         </div>
     </div>
 </div>

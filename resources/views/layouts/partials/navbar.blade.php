@@ -5,28 +5,22 @@
                         <span class="mdi mdi-menu"></span>
                     </button>
                     <div class="navbar-brand-wrapper">
-                        <a class="navbar-brand brand-logo" href="index.html"><img src="{{asset('assets/images/logo.png')}}"
+                        <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="{{asset('assets/images/logo.png')}}"
                                 alt="logo" /></a>
                         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{asset('assets/images/logo-mini.png')}}"
-                                alt="logo" /></a>
+                                alt="logo" /></a> -->
                     </div>
                         <ul class="navbar-nav navbar-nav-right">
                        
-                        <li class="nav-item dropdown mr-1">
-                            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
-                                id="messageDropdown" href="#" data-toggle="dropdown">
-                                <i class="mdi mdi-calendar mx-0"></i>
-                                <span class="count bg-info">2</span>
+                        
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                 aria-labelledby="messageDropdown">
                                 <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
                                 <a class="dropdown-item preview-item">
-                                    <div class="preview-thumbnail">
-                                        <img src="{{asset('assets/images/faces/face4.jpg')}}" alt="image" class="profile-pic">
-                                    </div>
+                                   
                                     <div class="preview-item-content flex-grow">
-                                        <h6 class="preview-subject ellipsis font-weight-normal">David Grey
+                                        <h6 class="preview-subject ellipsis font-weight-normal">Dadang 
                                         </h6>
                                         <p class="font-weight-light small-text text-muted mb-0">
                                             The meeting is cancelled
@@ -38,7 +32,7 @@
                                         <img src="{{asset('assets/images/faces/face2.jpg')}}" alt="image" class="profile-pic">
                                     </div>
                                     <div class="preview-item-content flex-grow">
-                                        <h6 class="preview-subject ellipsis font-weight-normal">Tim Cook
+                                        <h6 class="preview-subject ellipsis font-weight-normal">
                                         </h6>
                                         <p class="font-weight-light small-text text-muted mb-0">
                                             New product launch
@@ -59,12 +53,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown mr-2">
-                            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center"
-                                id="notificationDropdown" href="#" data-toggle="dropdown">
-                                <i class="mdi mdi-email-open mx-0"></i>
-                                <span class="count bg-danger">1</span>
-                            </a>
+                        
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                 aria-labelledby="notificationDropdown">
                                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
@@ -119,6 +108,8 @@
                     <ul class="navbar-nav mr-lg-2">
                         <li class="nav-item nav-search d-none d-lg-block">
                             <div class="input-group">
+                            <a class="navbar-brand brand-logo" href="#"><img src="{{asset('assets/images/logo.png')}}"
+                                alt="logo" /></a>
                                 <input type="text" class="form-control" placeholder="Pondok Anak Yatim" aria-label="search"
                                     aria-describedby="search">
                             </div>

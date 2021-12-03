@@ -10,13 +10,12 @@ Beranda
         <div class="col">
             <center>
             <h1>Selamat Datang!!!</h1>
-            <h4>Website Ini Menyediakan tempat bagi anak yang membutuhkan pengasuhan</h4>
+            <h4><i>Website Ini Menyediakan tempat bagi anak yang membutuhkan pengasuhan</i></h4>
             <br>
+            <style></style>
             <img src="{{asset('assets/images/other/web-banner-sedekah8.png')}}" width="925spx" alt="">
+            <a type="submit" class="btn btn-success"  href="{{url('admin/donatur')}}">Mari Bersedekah !!!</a>
             </center>
-            <center>
-                <a type="submit" class="btn btn-primary"  href="{{url('admin/donatur')}}">Mari Bersedekah !!!</a>
-</center>
             <hr>
             <h2>Sejarah</h2>
            <h3>Pondok Yatim</h3>
